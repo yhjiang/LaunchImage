@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HomeVC;
 
 @interface YHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) HomeVC *viewController;
 @end

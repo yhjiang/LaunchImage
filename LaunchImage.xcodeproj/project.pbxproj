@@ -19,6 +19,8 @@
 		C630C63B193C20B40076AB5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C630C623193C20B30076AB5E /* UIKit.framework */; };
 		C630C643193C20B40076AB5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C630C641193C20B40076AB5E /* InfoPlist.strings */; };
 		C630C645193C20B40076AB5E /* LaunchImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C644193C20B40076AB5E /* LaunchImageTests.m */; };
+		C630C651193C25420076AB5E /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C64F193C25420076AB5E /* HomeVC.m */; };
+		C630C652193C25420076AB5E /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C650193C25420076AB5E /* HomeVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		C630C640193C20B40076AB5E /* LaunchImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaunchImageTests-Info.plist"; sourceTree = "<group>"; };
 		C630C642193C20B40076AB5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C630C644193C20B40076AB5E /* LaunchImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchImageTests.m; sourceTree = "<group>"; };
+		C630C64E193C25420076AB5E /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		C630C64F193C25420076AB5E /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		C630C650193C25420076AB5E /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				C630C62E193C20B30076AB5E /* YHAppDelegate.h */,
 				C630C62F193C20B30076AB5E /* YHAppDelegate.m */,
+				C630C64E193C25420076AB5E /* HomeVC.h */,
+				C630C64F193C25420076AB5E /* HomeVC.m */,
+				C630C650193C25420076AB5E /* HomeVC.xib */,
 				C630C631193C20B30076AB5E /* Images.xcassets */,
 				C630C626193C20B30076AB5E /* Supporting Files */,
 			);
@@ -221,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C630C62A193C20B30076AB5E /* InfoPlist.strings in Resources */,
+				C630C652193C25420076AB5E /* HomeVC.xib in Resources */,
 				C630C632193C20B30076AB5E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C630C651193C25420076AB5E /* HomeVC.m in Sources */,
 				C630C62C193C20B30076AB5E /* main.m in Sources */,
 				C630C630193C20B30076AB5E /* YHAppDelegate.m in Sources */,
 			);

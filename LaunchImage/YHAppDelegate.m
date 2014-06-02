@@ -7,6 +7,7 @@
 //
 
 #import "YHAppDelegate.h"
+#import "HomeVC.h"
 
 @implementation YHAppDelegate
 
@@ -15,7 +16,33 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ads_bg"]];
+    [bgImage setFrame:CGRectMake(0, 0, 320, 568)];
+    [bgView addSubview:bgImage];
+    
+    
+    /**
+     *  这里可以加载从网络获取的图片，如果加载成功，再执行下面延迟三秒的操作，否则，跳过延迟三秒
+     */
+    UIImageView *adImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ads"]];
+                            [adImage setFrame:CGRectMake(0, 0, 320, 460)];
+    [bgImage addSubview:adImage];
+
+    _viewController = [[HomeVC alloc] init];
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [bgView setHidden:YES];
+        [self.window setRootViewController:_viewController];
+    });
+    [self.window addSubview:bgView];
+    
+
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

@@ -7,7 +7,7 @@ LaunchImage
 
 
 ##效果图
-<img src='https://github.com/yhjiang/LaunchImage/blob/master/%20screeshot.png'>
+![image](https://github.com/yhjiang/LaunchImage/blob/master/%20screeshot.png)
 
 ##用法
 用法在入口类里
